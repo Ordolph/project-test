@@ -31,4 +31,9 @@ module.exports = function (app) {
         const status = await Cache.deleteObj(req.params.id);
         res.json(status);
     });
+    // GET user info, if not present, POST new user info
+    app.get("/api/player/:id", function (req, res) {
+        var player = res;
+        console.log(player);
+    });
 };
