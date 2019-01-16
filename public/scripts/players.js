@@ -8,12 +8,12 @@ function onSignIn(googleUser) {
     //     type: "GET",
     // });
 
-    // $.ajax("/", {
-    //     type: "POST",
-    //     data: {
-    //         name: name,
-    //         icon: icon,
-    //         googleID: id
-    //     }
-    // });
+    $.ajax("/", {
+        type: "POST",
+        data: {
+            name: name,
+            icon: icon,
+            googleID: id
+        }
+    });
 }
